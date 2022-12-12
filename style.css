@@ -42,5 +42,19 @@ a, a:hover{
     font-size: 155%;
 }
 
+/* Logo */
+.logo img{
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+
+
 
 
