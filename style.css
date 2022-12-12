@@ -10,10 +10,6 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-/* Links til hovednavigation styling */
-a, a:hover{
-    text-decoration: none;
-}
 
 /* Styling af indhold i bar */
 .top-bar{
@@ -50,13 +46,14 @@ nav{
     align-items: center;
 }
 
+/* tekst */
 nav a{ 
     color: aliceblue;
 }
 
 /* Logo */
 .logo img{
-    width: 40px;
+    width: 45px;
     margin-right: 10px;
     border-radius: 50%;
     overflow: hidden;
@@ -64,11 +61,18 @@ nav a{
     border: solid white 1px;
 }
 
+.logo{
+    flex: 1;
+}
 
+/* Links */
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
 
-
-
-
-
-
-
+/* Links til hovednavigation styling */
+a, a:hover{
+    text-decoration: none;
+}
