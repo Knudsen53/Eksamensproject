@@ -45,6 +45,8 @@ a, a:hover{
 nav{
     background-color: #0C0B0B;
     padding: 5px 25px;
+    display: flex;
+    align-items: center;
 }
 
 /* Logo */
