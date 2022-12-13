@@ -86,3 +86,9 @@ a, a:hover{
     padding: 10px 10px;
     font-size: 20px;
 }
+
+.toggle{
+    display: none;
+    font-size: 35px;
+
+}
