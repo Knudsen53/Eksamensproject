@@ -94,12 +94,14 @@ a, a:hover{
 
 @media screen and (max-width: 600px) {
     nav{
-        position: relative;
-        padding: 5px 10px;
+        display: flex;
+        align-items: center;
     }
 
     .menu{
-    margin-top: 15px;
+        display: flex;
+        align-items: center;
+        list-style: none;
 
     
     
