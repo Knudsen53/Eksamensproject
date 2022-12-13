@@ -25,6 +25,11 @@ body{
     color: aliceblue;
 }
 
+.top-bar span{
+    font-size: 120%;
+
+}
+
 /* Styling af boks */
 .top-bar ul{
     color: #CCE4EB;
@@ -38,21 +43,21 @@ body{
     font-size: 155%;
 }
 
-/* Hovednav */
+/* Hovedmenu */
 nav{
     background-color: #0C0B0B;
-    padding: 5px 25px;
     display: flex;
     align-items: center;
 }
 
 /* tekst */
 nav a{ 
-    color: aliceblue;
+    color:  white;
 }
 
-.top-bar span{
-    font-size: 120%;
+.menu a:hover{
+    color: aqua;
+    display: flex;
 
 }
 
@@ -85,11 +90,6 @@ a, a:hover{
 .menu li{
     padding: 10px 10px;
     font-size: 20px;
-}
-
-.toggle{
-    display: none;
-    font-size: 35px;
 }
 
 @media screen and (max-width: 600px) {
