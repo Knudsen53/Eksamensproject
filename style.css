@@ -35,12 +35,24 @@ body{
 }
 
 
-.top-bar ul{
+.top-bar ul, a:hover{
     color: #CCE4EB;
     list-style: none; 
-    display: flex;
-    margin-inline-end: 20px;
+    display: flex
 }
+
+.top-bar ul, a:link{
+  color: #CCE4EB;
+  list-style: none; 
+  display: flex
+}
+
+.top-bar li{
+  color: #CCE4EB;
+  list-style: none; 
+  display: flex
+}
+
 
 
 .top-bar li{
@@ -268,29 +280,19 @@ h1{
 }
 
 .boxom1 {
-  display: flex;
   text-align: center;
-  justify-content: center;
-  flex-wrap: wrap;
   background-color: #CCE4EB;
   padding: 2rem;
-  align-items: center;
 }
 
 .boxom1 > * {
-  flex-basis: 33%;
   padding: 2rem;
-  align-items: center;
 }
 
 .boxom2 {
-  display: flex;
   text-align: center;
-  justify-content: center;
-  flex-wrap: wrap;
   background-color: #CCE4EB;
   padding: 2rem;
-  align-items: center;
 }
 
 .boxom2 > * {
@@ -350,6 +352,21 @@ h1{
           padding: 2rem;
           justify-items: center;
           flex-basis: content;
+      }
+      .boxpictext1{
+        justify-content: center;
+        padding: 2rem;
+        justify-items: center;
+      }
+      .boxpictext2{
+        justify-content: center;
+        padding: 2rem;
+        justify-items: center;
+      }
+      .boxpictext3{
+        justify-content: center;
+        padding: 2rem;
+        justify-items: center;
       }
       .main{
         column-count: 1;
