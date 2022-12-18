@@ -25,6 +25,7 @@ body{
 .top-bar span{
     color: aliceblue;
     display: flex;
+    align-items: center;
 
 }
 
@@ -149,7 +150,7 @@ h1{
     text-align: center;
     font-size: 22px;
     justify-content: center;
-    background-color: white;
+    
     grid-area: auto;
 }
 
@@ -256,23 +257,148 @@ h1{
     }
 
 
-    
+/* Mit arbejde */
 
+.picom{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 4px solid #ffff;
+  
+}
+
+.boxom1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #CCE4EB;
+  padding: 2rem;
+  align-items: center;
+}
+
+.boxom1 > * {
+  flex-basis: 33%;
+  padding: 2rem;
+  align-items: center;
+}
+
+.boxom2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #CCE4EB;
+  padding: 2rem;
+  align-items: center;
+}
+
+.boxom2 > * {
+  flex-basis: 33%;
+  padding: 2rem;
+  align-items: center;
+}
+    
+  @media screen and (min-width: 550px){
+    .boxom1{
+        justify-content: center;
+        padding: 2rem;
+        justify-items: center;
+
+    }
+    .boxom1 >*{
+        flex-basis: content;
+        justify-content: center;
+        padding: 2rem;
+        align-items: center;
+    }
+    .boxom2{
+      justify-content: center;
+        padding: 2rem;
+        justify-items: center;
+    }
+    .boxom2 >*{
+      justify-content: center;
+        padding: 2rem;
+        justify-items: center;
+        flex-basis: content;
+    }
+
+  }
+
+
+    @media screen and (min-width: 768px){
+      .boxom1{
+          justify-content: center;
+          padding: 2rem;
+          justify-items: center;
+  
+      }
+      .boxom1 >*{
+          flex-basis: content;
+          justify-content: center;
+          padding: 2rem;
+          align-items: center;
+      }
+      .boxom2{
+        justify-content: center;
+          padding: 2rem;
+          justify-items: center;
+      }
+      .boxom2 >*{
+        justify-content: center;
+          padding: 2rem;
+          justify-items: center;
+          flex-basis: content;
+      }
+      .main{
+        column-count: 1;
+      }
+  
+    }
 
 
 /* Om mig */
+
+ .hkj{
+  background-color: #CCE4EB;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr ;
+  grid-template-rows: 2fr;
+  grid-template-areas:
+  '. speciale .';
+  grid-gap: 1rem;
+  padding: 2rem;
+ }
+
+ .hkj h4{
+  font-size: 24px;
+  grid-area: speciale;
+  
+ }
+
+ .wcid > {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 2fr 2fr ;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-areas:
+  '. logo info1 info1 .'
+  '. logo2 info2 info2 .'
+  '. logo3 info3 info3 .';
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
 .wciditem1 {
     grid-area: logo;
     height: 6.25rem;
     width: 6.25rem;
-  
   }
   .wciditem2 {
     grid-area: info1;
     height: auto;
     width: auto;
     line-height: 1.8;
-  
   }
 
   .wciditem3 {
@@ -286,26 +412,24 @@ h1{
     height: auto;
     width: auto;
     line-height: 1.8;
-  
   }
+
   .wciditem5 {
     grid-area: logo3;
     height: 6.25rem;
     width: 6.25rem;
-  
-  
   }
+
   .wciditem6 {
     grid-area: info3;
     height: auto;
     width: auto;
     line-height: 1.8;
-  
   }
   
   .wcid > .wcidcontainer {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 2fr 2fr 0.5fr;
+    grid-template-columns: 0.5fr 1fr 2fr 2fr ;
     grid-template-rows: 2fr 2fr 2fr;
     grid-template-areas:
     '. logo info1 info1 .'
@@ -321,9 +445,11 @@ h1{
   }
 
   .wcid {
-    grid-area: main;
     display: flex;
     justify-content: center;
-    align-content: center;
     background-color: #CCE4EB;
     }
+
+  
+
+
