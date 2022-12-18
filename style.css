@@ -394,18 +394,6 @@ h1{
   
  }
 
- .wcid > {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 2fr 2fr ;
-  grid-template-rows: 2fr 2fr 2fr;
-  grid-template-areas:
-  '. logo info1 info1 .'
-  '. logo2 info2 info2 .'
-  '. logo3 info3 info3 .';
-  grid-gap: 1rem;
-  padding: 2rem;
-}
-
 .wciditem1 {
     grid-area: logo;
     height: 6.25rem;
