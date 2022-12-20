@@ -170,7 +170,7 @@ h1{
 /* flexbox forside billeder */
 .pic{
     width: 100%;
-    max-width: 300px;
+    width: 300px;
     height: auto;
     border: 4px solid #ffff;
     
@@ -208,6 +208,19 @@ h1{
     align-items: center;
   }
 
+
+  /* Specifikt for keyframes aka animation */
+  @keyframes play {
+    0%{background-position: 0px;}
+    100%{background-position: -5000px;}
+}
+
+.sprite {
+  width: 500px;
+  height: 500px;
+  background: url('IMG\animation02.png') 0 0 no-repeat;
+  animation: play 3s steps(10) infinite;
+}
   
 
   @media screen and (min-width: 550px){
@@ -270,37 +283,58 @@ h1{
 
 
 /* Mit arbejde */
+.sprite {
+  width: 300px;
+  height: 300px;
+  background: url('IMG\animation02.jpg') 0 0 no-repeat;
+  animation: play 3s steps(10) infinite;
+}
+
+@keyframes play {
+  0%{background-position: 0px;}
+  100%{background-position: -3000px;}
+}
 
 .picom{
   width: 100%;
-  max-width: 300px;
+  width: 300px;
   height: auto;
   border: 4px solid #ffff;
   
 }
 
 .boxom1 {
+  display: flex;
   text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
   background-color: #CCE4EB;
-  padding: 2rem;
-}
-
-.boxom1 > * {
-  padding: 2rem;
-}
-
-.boxom2 {
-  text-align: center;
-  background-color: #CCE4EB;
-  padding: 2rem;
-}
-
-.boxom2 > * {
-  flex-basis: 33%;
   padding: 2rem;
   align-items: center;
 }
-    
+
+.boxom1 > * {
+  flex-basis: 100%;
+  padding: 2rem;
+  align-items: center;
+}
+
+.boxom2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #CCE4EB;
+  padding: 2rem;
+  align-items: center;
+}
+
+.boxom2 > * {
+  flex-basis: 100%;
+  padding: 2rem;
+  align-items: center;
+}
+
   @media screen and (min-width: 550px){
     .boxom1{
         justify-content: center;
@@ -326,6 +360,10 @@ h1{
         flex-basis: content;
     }
 
+    .main{
+      column-count: 1;
+    }
+
   }
 
 
@@ -334,6 +372,7 @@ h1{
           justify-content: center;
           padding: 2rem;
           justify-items: center;
+          display: flex;
   
       }
       .boxom1 >*{
@@ -353,21 +392,7 @@ h1{
           justify-items: center;
           flex-basis: content;
       }
-      .boxpictext1{
-        justify-content: center;
-        padding: 2rem;
-        justify-items: center;
-      }
-      .boxpictext2{
-        justify-content: center;
-        padding: 2rem;
-        justify-items: center;
-      }
-      .boxpictext3{
-        justify-content: center;
-        padding: 2rem;
-        justify-items: center;
-      }
+   
       .main{
         column-count: 1;
       }
